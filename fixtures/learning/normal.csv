@@ -1,0 +1,3 @@
+case,estimate_pp,se_pp,margin_pp,prior_sd_pp
+symmetric,0,1,1,1
+negative,-2,1,1,1

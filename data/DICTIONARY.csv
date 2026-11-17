@@ -1,0 +1,52 @@
+file,variable,definition
+data/ordinary/baseline-items.csv,student_id,Fictional individual key; join one to one within the declared frame
+data/ordinary/baseline-items.csv,college_id,Fictional college identifier
+data/ordinary/baseline-items.csv,st1,"Raw ordinal item, 1-5; blank missing. Reverse item four within each scale only when forming its keyed score."
+data/ordinary/baseline-items.csv,st2,"Raw ordinal item, 1-5; blank missing. Reverse item four within each scale only when forming its keyed score."
+data/ordinary/baseline-items.csv,st3,"Raw ordinal item, 1-5; blank missing. Reverse item four within each scale only when forming its keyed score."
+data/ordinary/baseline-items.csv,st4,"Raw ordinal item, 1-5; blank missing. Reverse item four within each scale only when forming its keyed score."
+data/ordinary/baseline-items.csv,st5,"Raw ordinal item, 1-5; blank missing. Reverse item four within each scale only when forming its keyed score."
+data/ordinary/baseline-items.csv,wb1,"Raw ordinal item, 1-5; blank missing. Reverse item four within each scale only when forming its keyed score."
+data/ordinary/baseline-items.csv,wb2,"Raw ordinal item, 1-5; blank missing. Reverse item four within each scale only when forming its keyed score."
+data/ordinary/baseline-items.csv,wb3,"Raw ordinal item, 1-5; blank missing. Reverse item four within each scale only when forming its keyed score."
+data/ordinary/baseline-items.csv,wb4,"Raw ordinal item, 1-5; blank missing. Reverse item four within each scale only when forming its keyed score."
+data/ordinary/baseline-items.csv,wb5,"Raw ordinal item, 1-5; blank missing. Reverse item four within each scale only when forming its keyed score."
+data/ordinary/baseline-offer.csv,student_id,Fictional individual key; join one to one within the declared frame
+data/ordinary/baseline-offer.csv,college_id,Fictional college identifier
+data/ordinary/baseline-offer.csv,offer,"Randomized offer assignment, 0/1; not mentoring uptake"
+data/ordinary/observed-registry.csv,student_id,Fictional individual key; join one to one within the declared frame
+data/ordinary/observed-registry.csv,cohort,Anchor cohort identifier
+data/ordinary/observed-registry.csv,responded_baseline,"Original baseline-survey response, 0/1"
+data/ordinary/observed-registry.csv,offer,"Randomized offer assignment, 0/1; not mentoring uptake"
+data/ordinary/observed-registry.csv,exit_month,"Recorded observation end, in months from enrollment"
+data/ordinary/observed-registry.csv,exit_type,"none, withdrawal, transfer or consent_withdrawn"
+data/ordinary/observed-registry.csv,withdrawal_label,1 withdrawal before transfer by month 12; 0 known nonwithdrawal; blank unknown
+data/ordinary/observed-registry.csv,outcome_known,"1 known outcome, 0 unknown; unknown label stays blank"
+data/ordinary/observed-registry.csv,observation_source,Original respondent registry or v1.1.0 administrative no-offer observation
+data/ordinary/month3-stress.csv,student_id,Fictional individual key; join one to one within the declared frame
+data/ordinary/month3-stress.csv,responded,"Month-three survey response, 0/1"
+data/ordinary/month3-stress.csv,st1,"Raw ordinal item, 1-5; blank missing. Reverse item four within each scale only when forming its keyed score."
+data/ordinary/month3-stress.csv,st2,"Raw ordinal item, 1-5; blank missing. Reverse item four within each scale only when forming its keyed score."
+data/ordinary/month3-stress.csv,st3,"Raw ordinal item, 1-5; blank missing. Reverse item four within each scale only when forming its keyed score."
+data/ordinary/month3-stress.csv,st4,"Raw ordinal item, 1-5; blank missing. Reverse item four within each scale only when forming its keyed score."
+data/ordinary/month3-stress.csv,st5,"Raw ordinal item, 1-5; blank missing. Reverse item four within each scale only when forming its keyed score."
+data/ordinary/visits-exposure.csv,student_id,Fictional individual key; join one to one within the declared frame
+data/ordinary/visits-exposure.csv,visits,Archived support visits through recorded enrollment
+data/ordinary/visits-exposure.csv,months,"Recorded months enrolled through month 12, used as exposure"
+data/ordinary/visits-exposure.csv,prior_grade,Recorded pre-entry grade covariate
+data/ordinary/visits-exposure.csv,part_time,"Recorded part-time indicator, 0/1"
+data/ordinary/visits-exposure.csv,first_gen,"Recorded first-generation indicator, 0/1"
+data/ordinary/month3-screen.csv,student_id,Fictional individual key; join one to one within the declared frame
+data/ordinary/month3-screen.csv,college_id,Fictional college identifier
+data/ordinary/month3-screen.csv,intention,"Recorded month-three intention-to-leave response, 0/1; blank unavailable"
+data/ordinary/month3-screen.csv,exit_month,"Recorded observation end, in months from enrollment"
+data/ordinary/month3-screen.csv,label,Canonical withdrawal label copied from the observed registry; blank unknown
+data/ordinary/synthesis-colleges.csv,college,Anonymous college alias A-P in sorted source-college order
+data/ordinary/synthesis-colleges.csv,assigned_no,Original assigned count in the named offer arm; GPA may be missing
+data/ordinary/synthesis-colleges.csv,assigned_offer,Original assigned count in the named offer arm; GPA may be missing
+data/ordinary/synthesis-colleges.csv,known_no,Count with observed month-12 GPA in the named offer arm
+data/ordinary/synthesis-colleges.csv,known_offer,Count with observed month-12 GPA in the named offer arm
+data/ordinary/synthesis-colleges.csv,sum_no,Sum of observed GPA in integer hundredths in the named arm
+data/ordinary/synthesis-colleges.csv,sum_offer,Sum of observed GPA in integer hundredths in the named arm
+data/ordinary/synthesis-colleges.csv,ss_no,Sum of squares of the integer-hundredths GPA values in the named arm
+data/ordinary/synthesis-colleges.csv,ss_offer,Sum of squares of the integer-hundredths GPA values in the named arm

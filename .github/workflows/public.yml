@@ -1,0 +1,26 @@
+name: Claim public verification
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    name: Public data and three routes
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install NumPy and actual base R
+        run: |
+          sudo apt-get update -o Acquire::Retries=2
+          sudo apt-get install -y --no-install-recommends r-base-core
+          python -m pip install --retries 2 --timeout 15 -r requirements.txt
+      - name: Verify public data and cases
+        run: python scripts/check_public.py

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Three sources of probability</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Three sources of probability</h1>
+</header>
+<p><a href="../index.html">Companion home</a></p>
+<p>The Chapter 3 fixtures are invented records with exact finite reference sets. The sampling case enumerates six equal-probability college pairs. The blocked assignment case enumerates 36 allocations, with two absolute extremes and two-sided p value 0.0556. The deliberately different pooled reference has 70 allocations and p value 0.0286.</p>
+<p>The assignment calculation uses a sharp null of no individual offer effect and no interference. It keeps fixed outcomes while enumerating two offers per college. These are the design and null for this fixture.</p>
+<p>Under the independent common-probability binary model, the observed count has probability 42.2% at p = 0.25 and 25.0% at p = 0.50. Their likelihood ratio is 1.6875.</p>
+<p>Read the <a href="../fixtures/part1/README.md">fixture dictionary</a> and <a href="part1-receipt.json">aggregate receipt</a>. Run <code>python3 scripts/check_part1.py --fixture-only</code> with NumPy and actual base R. The three routes also verify a known-label denominator of zero as undefined and refuse four invalid input variants.</p>
+</body>
+</html>

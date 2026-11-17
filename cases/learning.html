@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Learning</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Learning</h1>
+</header>
+<p><a href="../index.html">Companion home</a> · <a href="learning-receipt.json">Learning receipt</a> · <a href="method-register.html">Coverage register</a></p>
+<h2 id="follow-the-six-steps">Follow the six steps</h2>
+<p>Name the target, locate its limiting link, reduce to an inspectable example, calculate independently, test a failure, and write the bounded claim. These teaching cases have known prior exposure and no new held-out evaluation.</p>
+<h2 id="month-three-intention-screen">Month-three intention screen</h2>
+<p>Among 995 eligible Tonmick entrants with a month-three intention response and a known outcome, the hit rate was 65.35% and the false-alarm rate 10.18%. There were 1,485 eligible entrants and 1,002 with a screen, including 7 unknown outcomes. The four known-label cells are TP 66, FP 91, FN 35 and TN 803. Screen coverage was 67.47%. Positive predictive value was 42.04%.</p>
+<p>The uncorrected probit difference is 1.666 and criterion 0.438 under the equal-variance normal representation. One binary operating point cannot test that latent distribution. Completing the unknown labels gives hit-rate bounds 61.68% to 65.69% and positive-predictive-value bounds 41.77% to 42.41%. These are missing-label bounds conditional on known labels, not confidence limits or a policy benefit.</p>
+<h2 id="normal-working-comparison">Normal working comparison</h2>
+<p>Under the fixed normal working likelihood and a zero-centered normal prior with SD three percentage points, the posterior probability within H1 of a reduction beyond two points is 42.7%. BF01 is 1.068 for the point null against that proper two-sided alternative. Posterior probabilities condition on H1. The likelihood is the fixed-SE normal approximation for Chapter 9’s Book 9 adjusted and standardized contrast in percentage points.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Prior SD in pp</th>
+<th style="text-align: right;">P(negative given H1)</th>
+<th style="text-align: right;">P(reduction beyond 2 given H1)</th>
+<th style="text-align: right;">BF01</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">71.6%</td>
+<td style="text-align: right;">4.6%</td>
+<td style="text-align: right;">0.956</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">85.2%</td>
+<td style="text-align: right;">42.7%</td>
+<td style="text-align: right;">1.068</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">88.9%</td>
+<td style="text-align: right;">56.7%</td>
+<td style="text-align: right;">2.494</td>
+</tr>
+</tbody>
+</table>
+<p>The three scales and two-point teaching margin are disclosed choices. The comparison supplies no new outcome or assignment information. Consult Chapter 6 separately for the finite design interval.</p>
+<h2 id="run-the-invented-examples">Run the invented examples</h2>
+<p>From the companion root run <code>python scripts/check_learning.py --fixture-only</code> with NumPy and actual base R installed. Counts and normal parameters are invented fixtures. Tests include duplicate identities, invalid screens, invalid standard errors and an extreme proportion with no finite raw probit.</p>
+<p>Further study: Stanislaw and Todorov (1999), <a href="https://doi.org/10.3758/BF03207704">doi:10.3758/BF03207704</a>; Kass and Raftery (1995), <a href="https://doi.org/10.1080/01621459.1995.10476572">doi:10.1080/01621459.1995.10476572</a>.</p>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "toy/schedules": 36,
+  "toy/if0/stat": -1,
+  "toy/if0/extremes": 2,
+  "toy/if0/p": 0.05555555555555555,
+  "toy/if1/stat": -0.75,
+  "toy/if1/extremes": 6,
+  "toy/if1/p": 0.16666666666666666,
+  "toy/max_p": 0.16666666666666666
+}

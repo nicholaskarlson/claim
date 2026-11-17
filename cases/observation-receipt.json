@@ -1,0 +1,58 @@
+{
+  "contract": "B11-O5-FRAME-v1",
+  "scope": "Tonmick anchor invitation roster, equal person weight, actual mixed offer and administrative policy",
+  "book8_snapshot_commit": "290cddcb53195c5137245a0328a69ac22bcddfe8",
+  "book8_release": "https://github.com/nicholaskarlson/missing-data/releases/tag/v0.1.0",
+  "printed": {
+    "O5_ALL_N": "1,600",
+    "O5_ALL_KNOWN": "1,589",
+    "O5_ALL_EVENTS": "257",
+    "O5_ALL_UNKNOWN": "11",
+    "O5_ALL_RATE": "16.17%",
+    "O5_RESP_N": "1,219",
+    "O5_RESP_KNOWN": "1,208",
+    "O5_RESP_EVENTS": "173",
+    "O5_RESP_UNKNOWN": "11",
+    "O5_RESP_RATE": "14.32%",
+    "O5_NON_N": "381",
+    "O5_NON_KNOWN": "381",
+    "O5_NON_EVENTS": "84",
+    "O5_NON_UNKNOWN": "0",
+    "O5_NON_RATE": "22.05%",
+    "O5_TRANSFERS": "52",
+    "O5_BOUNDS": "16.06% to 16.75%",
+    "O5_AJ": "16.11%",
+    "O5_STRESS_COMPLETE": "1,067",
+    "O5_STRESS_OBS": "2.934",
+    "O5_STRESS_WEIGHTED": "2.936",
+    "O5_FIX_OBS": "20.00%",
+    "O5_FIX_WEIGHTED": "31.25%",
+    "O5_FIX_BOUNDS": "10% to 60%",
+    "O5_FIX_A_WEIGHT": "1.25",
+    "O5_FIX_B_WEIGHT": "5"
+  },
+  "fixture": {
+    "fixture/eligible": 20,
+    "fixture/known": 10,
+    "fixture/withdrawals": 2,
+    "fixture/unknown": 10,
+    "fixture/known_rate": 0.2,
+    "fixture/weighted": 0.3125,
+    "fixture/lower": 0.1,
+    "fixture/upper": 0.6,
+    "fixture/weight_A": 1.25,
+    "fixture/weight_B": 5,
+    "fixture/weight_sum": 20
+  },
+  "routes": [
+    "NumPy",
+    "standard-library Python",
+    "base R"
+  ],
+  "zero_coverage_refused": true,
+  "interpretation": {
+    "O5_BOUNDS": "Binary completion bounds for the actual invitation roster",
+    "O5_AJ": "Book 8 event-time estimate conditional on censoring assumptions",
+    "O5_STRESS_WEIGHTED": "Book 8 complete-stress weighting under its own assumptions"
+  }
+}

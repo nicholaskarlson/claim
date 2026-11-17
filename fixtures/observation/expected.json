@@ -1,0 +1,13 @@
+{
+  "fixture/eligible": 20,
+  "fixture/known": 10,
+  "fixture/withdrawals": 2,
+  "fixture/unknown": 10,
+  "fixture/known_rate": 0.2,
+  "fixture/weighted": 0.3125,
+  "fixture/lower": 0.1,
+  "fixture/upper": 0.6,
+  "fixture/weight_A": 1.25,
+  "fixture/weight_B": 5,
+  "fixture/weight_sum": 20
+}

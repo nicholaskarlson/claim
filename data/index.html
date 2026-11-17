@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Tonmick ordinary data</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Tonmick ordinary data</h1>
+</header>
+<h1 id="tonmick-ordinary-data-for-the-claim-ceiling">Tonmick ordinary data for The Claim Ceiling</h1>
+<p>All records are fictional. These files are selected, verified projections of Tonmick World ordinary records, not a newly generated sample. They support the cases named below. See <a href="DICTIONARY.csv">DICTIONARY.csv</a> and <a href="PROVENANCE.json">PROVENANCE.json</a>. Use <code>student_id</code> for individual-record joins; row inventories differ by purpose.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">File</th>
+<th style="text-align: left;">Rows and use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="ordinary/baseline-items.csv">ordinary/baseline-items.csv</a></td>
+<td style="text-align: left;">1,219 baseline respondents; raw stress/wellbeing items. S5 requires all ten items and reverses item four on each scale.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="ordinary/baseline-offer.csv">ordinary/baseline-offer.csv</a></td>
+<td style="text-align: left;">The same respondents, with college and randomized offer; offer is assignment, not attendance.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="ordinary/observed-registry.csv">ordinary/observed-registry.csv</a></td>
+<td style="text-align: left;">1,600 original invitees under the actual policy mixture, including 11 unknown outcomes. Use withdrawal_label with outcome_known, not a legacy zero.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="ordinary/month3-stress.csv">ordinary/month3-stress.csv</a></td>
+<td style="text-align: left;">Month-three response and raw stress items for baseline respondents. Missing response/items remain missing. The retest has its own eligibility and scoring rule.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="ordinary/visits-exposure.csv">ordinary/visits-exposure.csv</a></td>
+<td style="text-align: left;">Archived visits, recorded enrollment months and named covariates for baseline respondents. Recording and postassignment exposure limit interpretation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="ordinary/month3-screen.csv">ordinary/month3-screen.csv</a></td>
+<td style="text-align: left;">All invitees retained before the exit_month &gt; 3 landmark. Intention is a binary month-three response; blank means no available screen.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="ordinary/synthesis-colleges.csv">ordinary/synthesis-colleges.csv</a></td>
+<td style="text-align: left;">Sixteen anonymized college summaries. GPA known counts differ from withdrawal-known counts. Grade sums are integer hundredths; sums of squares use those same integer units squared.</td>
+</tr>
+</tbody>
+</table>
+<p>The registry endpoint is withdrawal before competing transfer by month twelve. Consent withdrawal leaves the label unknown. The month-three screen uses only records still observed and event-free at that scheduled landmark. The college synthesis is an analogue within one study, not sixteen independent replicated studies.</p>
+<p>The private World registry also contains simulator truth and author-only extensions. They are absent from this public selection. The <a href="../README.html">public checks</a> use these data and declared working-model inputs; inherited fits and upstream forecast evidence have separately stated scopes.</p>
+<p>Data, dictionary and notes: CC BY 4.0, Nicholas Elliott Karlson. Original World v1.0.0 plus derived administrative observation release v1.1.0. Inherited notices: <a href="../WORLD_LICENSES.md">World</a> and <a href="../REGISTRY_LICENSES.md">registry</a>.</p>
+</body>
+</html>

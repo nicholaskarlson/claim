@@ -1,0 +1,113 @@
+{
+  "release_id": "book11-claim-public-v0.14.0",
+  "world_repository": "https://github.com/nicholaskarlson/tonmick-world",
+  "world_commit": "b28de903719b5b3a79b390a8e7f6a57a32e172a7",
+  "world_baseline": "1.0.0",
+  "observation_extension": "1.1.0",
+  "world_members": {
+    "data/anchor/baseline.csv": "8ba580b70745f3e1cda663cf0c9a277a4cedfaccb870f885ffa441f036086850",
+    "data/anchor/followup_long.csv": "ab385f2fd760d5f5dd0ef75f0075b91c6e82a98270d329078c9eadcb917a972f",
+    "data/anchor/participants.csv": "3708dda311ac5388800ade6fc6c73c31f9ed6b6d52c02bbf2be256ddd740dd2e",
+    "data/anchor/registry.csv": "df7761f29400ac18ea7ec6ab4f40a985e29796f12f1414e089d2781412afcd47",
+    "derived/v1.1.0/data/anchor_observed_registry.csv": "28c2a43ab569f517435fbb58c0152cfdbe990012f8f91139714146483e2f6e35",
+    "LICENSES.md": "8655b5e0fdad79eb17b5eddd66b1a3b77d164f484bffebd4f86ed154b9646d10",
+    "derived/v1.1.0/LICENSES.md": "c870b5b89b68c9777441b7be1d3c94461e29db8be4843a83e6c00b51849bb8a0"
+  },
+  "datasets": {
+    "data/ordinary/baseline-items.csv": {
+      "sha256": "2b151b576daae20ac60004f519dba3016eed4d0fe500f01fd2e9de24c3503dde",
+      "rows": 1219,
+      "fields": [
+        "student_id",
+        "college_id",
+        "st1",
+        "st2",
+        "st3",
+        "st4",
+        "st5",
+        "wb1",
+        "wb2",
+        "wb3",
+        "wb4",
+        "wb5"
+      ]
+    },
+    "data/ordinary/baseline-offer.csv": {
+      "sha256": "4b43d104fae597c22d98be390f5ced45af8061d70e1b6f5e5c5b39bc42d23827",
+      "rows": 1219,
+      "fields": [
+        "student_id",
+        "college_id",
+        "offer"
+      ]
+    },
+    "data/ordinary/observed-registry.csv": {
+      "sha256": "28c2a43ab569f517435fbb58c0152cfdbe990012f8f91139714146483e2f6e35",
+      "rows": 1600,
+      "fields": [
+        "student_id",
+        "cohort",
+        "responded_baseline",
+        "offer",
+        "exit_month",
+        "exit_type",
+        "withdrawal_label",
+        "outcome_known",
+        "observation_source"
+      ]
+    },
+    "data/ordinary/month3-stress.csv": {
+      "sha256": "079816ed2b1335a14daca00503967807f5e8892e75ec956a7660eff6b1f25128",
+      "rows": 1219,
+      "fields": [
+        "student_id",
+        "responded",
+        "st1",
+        "st2",
+        "st3",
+        "st4",
+        "st5"
+      ]
+    },
+    "data/ordinary/visits-exposure.csv": {
+      "sha256": "d12e34a35c3e2b1437517d57a4db1c0458db19f56e6a900387719324eed63e32",
+      "rows": 1219,
+      "fields": [
+        "student_id",
+        "visits",
+        "months",
+        "prior_grade",
+        "part_time",
+        "first_gen"
+      ]
+    },
+    "data/ordinary/month3-screen.csv": {
+      "sha256": "9a7ed6f907686cbf8258207741ea7c70e5df054ccf4af8eac11e885b807575d7",
+      "rows": 1600,
+      "fields": [
+        "student_id",
+        "college_id",
+        "intention",
+        "exit_month",
+        "label"
+      ]
+    },
+    "data/ordinary/synthesis-colleges.csv": {
+      "sha256": "0954e85fd076c8c61ccd9552b13d4e5237b96c84c2437330f41a01fa17c9c4e9",
+      "rows": 16,
+      "fields": [
+        "college",
+        "assigned_no",
+        "assigned_offer",
+        "known_no",
+        "known_offer",
+        "sum_no",
+        "sum_offer",
+        "ss_no",
+        "ss_offer"
+      ]
+    }
+  },
+  "attribution": "Nicholas Elliott Karlson, Tonmick World; CC BY 4.0. See retained World and registry notices.",
+  "transformations": "Field projections and keyed joins on ordinary records, with baseline respondent and month-three selection retained in the analysis. The college GPA file is integer-cents aggregation with sorted anonymous setting aliases. No new World draw."
+}

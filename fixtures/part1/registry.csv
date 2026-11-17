@@ -1,0 +1,9 @@
+student_id,cohort,responded_baseline,offer,exit_month,exit_type,withdrawal_label,outcome_known,observation_source
+A,anchor,1,0,5,withdrawal,1,1,fixture
+B,anchor,1,0,12,none,0,1,fixture
+C,anchor,1,0,4,consent_withdrawn,,0,fixture
+D,anchor,1,1,7,withdrawal,1,1,fixture
+E,anchor,1,1,8,transfer,0,1,fixture
+F,anchor,1,1,3,consent_withdrawn,,0,fixture
+G,anchor,0,0,5,withdrawal,1,1,fixture
+H,anchor,0,0,12,none,0,1,fixture

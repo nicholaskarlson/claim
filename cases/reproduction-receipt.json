@@ -1,0 +1,64 @@
+{
+  "contract": "B11-V10-TRACE-v1",
+  "source_claim": "S5",
+  "source_contract": "B11-S5-OBS-v1",
+  "source_upstream_commit": "943b4c0256de6fa8d644bad4a496db4f5d6b8a02",
+  "counts": {
+    "baseline": 1219,
+    "colleges": 16,
+    "paired": 922
+  },
+  "raw_r_by_route": {
+    "numpy": -0.3630586403673851,
+    "standard-library Python": -0.3630586403673851,
+    "base R": -0.36305864036738505
+  },
+  "absolute_tolerance": 1e-12,
+  "print_rule": "Counts with thousands separators. Pearson r to three decimal places with a Unicode minus sign.",
+  "fixture": {
+    "contract": "B11-V10-FIXTURE-v1",
+    "contract_sha256": "afcba7257371f435d14d88062748fe8dc34fba68ef49bb940102ea81a43d3654",
+    "data_sha256": "b70567b21cdc8111628f46d9db4a6dfb6004298a1d80eb194f800bb8c2898fca",
+    "code_sha256": {
+      "scripts/s5_numpy.py": "25c26b1bf884cb40d6dff3317b9d51bcb0b0801b6fce1e71830c46a3ee8a7cf9",
+      "scripts/s5_scalar.py": "5fc2660ad7f75ddc6d6477b3340177a96dc507aadac52d5c67da117f547a13eb",
+      "scripts/s5_base.R": "91230e419b274818798d81907be1d6d592beae523237f54faba5cb180cb2b2d6",
+      "scripts/check_s5.py": "b3b094b46cd1473a15d2bfdba7fbf463a52d3a7f753574b1d2712e5e667c5725",
+      "scripts/project_baseline.py": "a65caad03956781bfc770b84fae6b22d0deb0e7d6c4e8342ab9cd1aec156a861"
+    },
+    "absolute_tolerance": 1e-12,
+    "counts": {
+      "baseline": 4,
+      "colleges": 2,
+      "paired": 3
+    },
+    "raw_r_by_route": {
+      "numpy": -1.0,
+      "standard-library Python": -1.0,
+      "base R": -1.0
+    },
+    "keyed_sums": [
+      [
+        "A",
+        5,
+        15
+      ],
+      [
+        "B",
+        10,
+        10
+      ],
+      [
+        "C",
+        15,
+        5
+      ]
+    ],
+    "r_print": "−1.000",
+    "reordered_bytes_refused": true,
+    "reordered_result_agreed": true
+  },
+  "observed_sentence": "Among 922 Tonmick baseline respondents with both five-item scores complete, the recorded stress and wellbeing scores had a Pearson correlation of −0.363.",
+  "observed_scope": "Aggregate from the authoring check of the permitted ordinary records",
+  "runnable_scope": "Invented fixture and reordered copy"
+}

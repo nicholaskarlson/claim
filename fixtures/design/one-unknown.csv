@@ -1,0 +1,9 @@
+student_id,college_id,offer,outcome
+A1,A,0,1
+A2,A,0,1
+A3,A,1,0
+A4,A,1,0
+B1,B,0,1
+B2,B,0,1
+B3,B,1,0
+B4,B,1,

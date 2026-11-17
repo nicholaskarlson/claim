@@ -1,0 +1,16 @@
+{
+  "id": "B11-P3-EXACT-v1",
+  "kind": "Invented exact teaching fixtures, separate from Tonmick",
+  "inputs": {
+    "fixtures/part1/sampling.csv": "7b37207e32ee71735e77f3960b0e323fcf04e92be20edfefe72d859b2788ab8c",
+    "fixtures/part1/assignment.csv": "c7a94ec84fb3987bfc85d4920bc75b87d7fd0740d9f8574013a6b736a27ba24c",
+    "fixtures/part1/model.csv": "b059c08712d171106efeafdaa875c2f4c778767b15851018f6bc033fb6303ec7"
+  },
+  "sampling": "Uniform choice of two of four equal-size colleges, complete outcomes within selected colleges; selected-record rate targets the full equal-size frame rate.",
+  "assignment": "Two offers selected uniformly within each four-person college, independently across two colleges. Fixed outcomes under the sharp null of no individual effect and no interference. Compare the absolute offered-minus-no-offer difference inclusively.",
+  "pooled_comparison": "Deliberately different rule allocating four offers among eight; report as a comparison of reference sets, not as the declared experiment.",
+  "model": "Binomial event-count probability for four independent common-probability trials with one event; compare p=0.25 and p=0.50. Ratio of count likelihoods.",
+  "absolute_tolerance": 1e-12,
+  "print_rule": "Exact counts; proportions as stated percentages, p values to four decimals, likelihood ratio to four decimals.",
+  "exposure": "Exact answers follow from declared inputs and enumeration. No blind preregistration claim; no World draws."
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Coverage register</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Coverage register</h1>
+</header>
+<p><a href="../index.html">Companion home</a> · <a href="method-register.json">Register JSON</a></p>
+<p>The 28 topics proposed in the commissioning outline, reconciled against inspected Book 9, Book 10 and current Book 11 sources. Statuses describe this reader’s documented route. Books 12–15 and the Chapter 14 cases remain prospective.</p>
+<h2 id="read-the-status-with-the-route">Read the status with the route</h2>
+<p><strong>Taught.</strong> A worked case with declared data, computation checks, problems and full solutions is available in an inspected source.</p>
+<p><strong>Named.</strong> Defined here or in an inspected source, with a question and a route for further work.</p>
+<p><strong>Boundary.</strong> Outside the worked scope documented for this reader, with the additional analysis or evidence specified.</p>
+<p><strong>Planned.</strong> A future case or volume is proposed and still awaits its completed checks.</p>
+<h2 id="worked-examples-available-in-this-reader">Worked examples available in this reader</h2>
+<ul>
+<li>Recorded-score correlation — Chapters 1, 4 and 10. Contract B11-V10-TRACE-v1.</li>
+<li>Frozen forecast scoring — Chapter 8. Contract B11-P8-FROZEN-v1.</li>
+<li>Working synthesis of observed-grade contrasts — Chapter 12. Contract B11-S12-COLLEGES-v1.</li>
+</ul>
+<h2 id="r01.-mcmc-and-bayesian-structural-or-synthesis-models">R01. MCMC and Bayesian structural or synthesis models</h2>
+<p><strong>Status.</strong> Boundary.</p>
+<p><strong>Scope.</strong> Posterior sampling needs convergence and Monte Carlo error checks beyond the deterministic examples inspected here.</p>
+<p><strong>Audit question.</strong> Which posterior quantity is estimated, and how large is its simulation error?</p>
+<p><strong>Further route.</strong> Stan posterior-analysis diagnostics; reduce the model to an analytic or grid example.</p>
+<p><strong>Evidence.</strong> Commissioned Book 11 outline, Chapter 13 register. Book 9 opening, worked scope. Stan Reference Manual, Posterior Analysis.</p>
+<h2 id="r02.-tree-ensembles-boosting-and-neural-networks">R02. Tree ensembles, boosting and neural networks</h2>
+<p><strong>Status.</strong> Boundary.</p>
+<p><strong>Scope.</strong> The current forecast example uses a frozen enrollment model. Training and tuning another learner need a separate contract.</p>
+<p><strong>Audit question.</strong> Were preprocessing and tuning confined to development, and how was the frozen forecast scored?</p>
+<p><strong>Further route.</strong> Chapter 8 scoring and Chapter 10 provenance; specialist training and validation.</p>
+<p><strong>Evidence.</strong> Commissioned Book 11 outline, Chapter 13 register. Book 9 opening, worked scope. Breiman (2001), Random Forests. Book 11 Chapter 10, verification.</p>
+<h2 id="r03.-text-as-data-and-ai-coded-measures">R03. Text as data and AI-coded measures</h2>
+<p><strong>Status.</strong> Boundary.</p>
+<p><strong>Scope.</strong> Preserving generated labels and auditing their use starts the check. A text classifier also needs a worked validation study.</p>
+<p><strong>Audit question.</strong> Do the labels represent the construct and use intended?</p>
+<p><strong>Further route.</strong> Chapter 10 preservation of labels and code; Chapter 4 measurement evidence.</p>
+<p><strong>Evidence.</strong> Commissioned Book 11 outline, Chapter 13 register. Book 11 Chapter 10, verification.</p>
+<h2 id="r04.-wlsmv-and-limited-information-ordinal-estimation">R04. WLSMV and limited-information ordinal estimation</h2>
+<p><strong>Status.</strong> Named.</p>
+<p><strong>Scope.</strong> Book 10 distinguishes its worked ordinal fitting criterion from the extra covariance and test-statistic machinery of WLSMV.</p>
+<p><strong>Audit question.</strong> Which estimator, weight matrix and adjustment produced the reported fit and uncertainty?</p>
+<p><strong>Further route.</strong> Book 10 Unit 6 and Flora and Curran (2004).</p>
+<p><strong>Evidence.</strong> Commissioned Book 11 outline, Chapter 13 register. Book 10 Unit 6, ordinal estimators. Flora &amp; Curran (2004), alternative estimators for ordinal CFA.</p>
+<h2 id="r05.-mixture-and-latent-class-models">R05. Mixture and latent-class models</h2>
+<p><strong>Status.</strong> Boundary.</p>
+<p><strong>Scope.</strong> Estimating a latent grouping calls for its own identification, optimization and classification checks.</p>
+<p><strong>Audit question.</strong> Do the proposed classes describe stable structure or a feature of the fitted distribution?</p>
+<p><strong>Further route.</strong> Specialist mixture-model treatment with start-value and model sensitivity.</p>
+<p><strong>Evidence.</strong> Commissioned Book 11 outline, Chapter 13 register. Book 9 opening, worked scope.</p>
+<h2 id="r06.-partial-least-squares-path-modeling">R06. Partial least squares path modeling</h2>
+<p><strong>Status.</strong> Boundary.</p>
+<p><strong>Scope.</strong> The intended composites or latent variables and the fitting objective need an explicit target before choosing a path model.</p>
+<p><strong>Audit question.</strong> What quantity does each path represent, and what would give it a causal interpretation?</p>
+<p><strong>Further route.</strong> State the score construction and estimand; seek a specialist account of the chosen model.</p>
+<p><strong>Evidence.</strong> Commissioned Book 11 outline, Chapter 13 register. Book 11 Chapter 12, prospective extensions.</p>
+<h2 id="r07.-automated-causal-discovery">R07. Automated causal discovery</h2>
+<p><strong>Status.</strong> Boundary.</p>
+<p><strong>Scope.</strong> A learned graph needs assumptions about measured variables, omitted causes and the data-generating conditions.</p>
+<p><strong>Audit question.</strong> Which graph features are identified under the declared assumptions?</p>
+<p><strong>Further route.</strong> Design and subject-matter constraints alongside a specialist discovery analysis.</p>
+<p><strong>Evidence.</strong> Commissioned Book 11 outline, Chapter 13 register. Book 11 Chapter 12, prospective extensions.</p>
+<h2 id="r08.-networks-of-partial-correlations">R08. Networks of partial correlations</h2>
+<p><strong>Status.</strong> Named.</p>
+<p><strong>Scope.</strong> A partial-correlation network describes conditional association under its model.</p>
+<p><strong>Audit question.</strong> What conditioning set and regularization define an edge?</p>
+<p><strong>Further route.</strong> Read the chosen network estimator and uncertainty procedure before interpreting edges.</p>
+<p><strong>Evidence.</strong> Commissioned Book 11 outline, Chapter 13 register. Book 11 Chapter 12, prospective extensions.</p>
+<h2 id="r09.-cox-and-continuous-time-survival-regression">R09. Cox and continuous-time survival regression</h2>
+<p><strong>Status.</strong> Boundary.</p>
+<p><strong>Scope.</strong> The event-time regression, observation intervals and competing events need their own specification.</p>
+<p><strong>Audit question.</strong> Is the target a hazard contrast, an event probability, or an effect at a fixed horizon?</p>
+<p><strong>Further route.</strong> Cox (1972); align exact, tied or interval-recorded times with the chosen event model.</p>
+<p><strong>Evidence.</strong> Commissioned Book 11 outline, Chapter 13 register. Book 9 opening, worked scope. Cox (1972), Regression Models and Life-Tables.</p>
+<h2 id="r10.-time-series-forecasting">R10. Time-series forecasting</h2>
+<p><strong>Status.</strong> Boundary.</p>
+<p><strong>Scope.</strong> Predicting an ordered series requires its own time-dependent validation and error structure.</p>
+<p><strong>Audit question.</strong> What information was available before each forecast origin?</p>
+<p><strong>Further route.</strong> Use time-respecting development and evaluation in a specialist forecasting treatment.</p>
+<p><strong>Evidence.</strong> Commissioned Book 11 outline, Chapter 13 register. Book 9 opening, worked scope.</p>
+<h2 id="r11.-spatial-statistics">R11. Spatial statistics</h2>
+<p><strong>Status.</strong> Boundary.</p>
+<p><strong>Scope.</strong> The geographic target, spatial dependence and sampling structure require a separate worked design.</p>
+<p><strong>Audit question.</strong> Does location change the independent units, exposure or population of interest?</p>
+<p><strong>Further route.</strong> Choose a spatial model and sampling argument for the actual geographic question.</p>
+<p><strong>Evidence.</strong> Commissioned Book 11 outline, Chapter 13 register.</p>
+<h2 id="r12.-network-and-diagnostic-accuracy-meta-analysis">R12. Network and diagnostic-accuracy meta-analysis</h2>
+<p><strong>Status.</strong> Boundary.</p>
+<p><strong>Scope.</strong> These synthesis targets need comparisons and joint structures beyond the Chapter 12 college example.</p>
+<p><strong>Audit question.</strong> Are the contrasts comparable across networks or diagnostic thresholds?</p>
+<p><strong>Further route.</strong> Specialist synthesis methods with connected comparisons, thresholds and dependence.</p>
+<p><strong>Evidence.</strong> Commissioned Book 11 outline, Chapter 13 register. Book 11 Chapter 12, prospective extensions.</p>
+<h2 id="r13.-test-construction-and-equating">R13. Test construction and equating</h2>
+<p><strong>Status.</strong> Boundary.</p>
+<p><strong>Scope.</strong> Book 10 compares scores and a fixed short form. Operational linking of new forms needs its own evidence.</p>
+<p><strong>Audit question.</strong> What permits the same score interpretation on the two forms?</p>
+<p><strong>Further route.</strong> Specialist test design and equating, with common-item or common-person linking evidence.</p>
+<p><strong>Evidence.</strong> Commissioned Book 11 outline, Chapter 13 register. Book 10 Unit 12, practical scoring.</p>
+<h2 id="r14.-computerized-adaptive-testing">R14. Computerized adaptive testing</h2>
+<p><strong>Status.</strong> Boundary.</p>
+<p><strong>Scope.</strong> Selecting the next item is a delivery and scoring policy that requires calibrated items and stopping rules.</p>
+<p><strong>Audit question.</strong> How do item selection and stopping affect precision and comparable interpretation?</p>
+<p><strong>Further route.</strong> Specialist adaptive testing with item-bank calibration and exposure checks.</p>
+<p><strong>Evidence.</strong> Commissioned Book 11 outline, Chapter 13 register. Book 10 Unit 12, practical scoring.</p>
+<h2 id="r15.-cognitive-process-models">R15. Cognitive process models</h2>
+<p><strong>Status.</strong> Boundary.</p>
+<p><strong>Scope.</strong> Process parameters require a specified response or learning model and checks that its parameters can be recovered.</p>
+<p><strong>Audit question.</strong> Which observed responses identify the proposed mechanism?</p>
+<p><strong>Further route.</strong> A small known-parameter example and specialist process-model validation.</p>
+<p><strong>Evidence.</strong> Commissioned Book 11 outline, Chapter 13 register.</p>
+<h2 id="r16.-physiological-and-neuroimaging-pipelines">R16. Physiological and neuroimaging pipelines</h2>
+<p><strong>Status.</strong> Boundary.</p>
+<p><strong>Scope.</strong> Acquisition and preprocessing determine the analyzed signal and need their own validation record.</p>
+<p><strong>Audit question.</strong> Which preprocessing choices change the measurement and uncertainty?</p>
+<p><strong>Further route.</strong> Domain-specific acquisition, preprocessing and reproducibility guidance.</p>
+<p><strong>Evidence.</strong> Commissioned Book 11 outline, Chapter 13 register.</p>
+<h2 id="r17.-qualitative-and-mixed-methods-research">R17. Qualitative and mixed-methods research</h2>
+<p><strong>Status.</strong> Boundary.</p>
+<p><strong>Scope.</strong> The series focuses on quantitative claims. An integrated qualitative and quantitative design needs additional methods.</p>
+<p><strong>Audit question.</strong> How are the strands designed, interpreted and integrated to answer the question?</p>
+<p><strong>Further route.</strong> Creswell et al. (2011) and specialist qualitative design and analysis.</p>
+<p><strong>Evidence.</strong> Commissioned Book 11 outline, Chapter 13 register. Creswell et al. (2011), Best practices for mixed methods research in the health sciences.</p>
+<h2 id="r18.-zero-inflated-and-hurdle-count-models">R18. Zero-inflated and hurdle count models</h2>
+<p><strong>Status.</strong> Named.</p>
+<p><strong>Scope.</strong> Book 9 maps these alternatives while its worked count fit reaches Poisson and negative binomial models.</p>
+<p><strong>Audit question.</strong> What creates a zero, and does the model distinguish zero generation from positive counts?</p>
+<p><strong>Further route.</strong> Book 9 Unit 6 count-model map and a specialist model with its own diagnostics.</p>
+<p><strong>Evidence.</strong> Commissioned Book 11 outline, Chapter 13 register. Book 9 Unit 6, count models.</p>
+<h2 id="r19.-sequential-and-adaptive-designs">R19. Sequential and adaptive designs</h2>
+<p><strong>Status.</strong> Boundary.</p>
+<p><strong>Scope.</strong> Interim looks and design adaptations change the analysis plan and error properties.</p>
+<p><strong>Audit question.</strong> Which stopping and adaptation rules were declared, and what error criterion do they control?</p>
+<p><strong>Further route.</strong> A specialist design and analysis covering the actual interim decisions.</p>
+<p><strong>Evidence.</strong> Commissioned Book 11 outline, Chapter 13 register. Book 9 opening, worked scope.</p>
+<h2 id="r20.-multilevel-structural-models">R20. Multilevel structural models</h2>
+<p><strong>Status.</strong> Boundary.</p>
+<p><strong>Scope.</strong> Within- and between-setting paths require level-specific measurement and a structural model.</p>
+<p><strong>Audit question.</strong> Which paths are defined within a person or college, and which compare settings?</p>
+<p><strong>Further route.</strong> Prospective structural route, with a specialist treatment of levels and identification.</p>
+<p><strong>Evidence.</strong> Commissioned Book 11 outline, Chapter 13 register. Book 11 Chapter 12, prospective extensions.</p>
+<h2 id="r21.-models-with-feedback-loops">R21. Models with feedback loops</h2>
+<p><strong>Status.</strong> Named.</p>
+<p><strong>Scope.</strong> Feedback makes temporal order, equilibrium and identification central to interpreting paths.</p>
+<p><strong>Audit question.</strong> What observations or interventions distinguish the directions in the loop?</p>
+<p><strong>Further route.</strong> An explicitly dynamic or identified simultaneous model.</p>
+<p><strong>Evidence.</strong> Commissioned Book 11 outline, Chapter 13 register. Book 11 Chapter 12, prospective extensions.</p>
+<h2 id="r22.-latent-interactions">R22. Latent interactions</h2>
+<p><strong>Status.</strong> Named.</p>
+<p><strong>Scope.</strong> An interaction of latent variables requires its own measurement and product model alongside the observed-variable case.</p>
+<p><strong>Audit question.</strong> How are both latent quantities scaled and how is their product identified?</p>
+<p><strong>Further route.</strong> Specialist latent-interaction estimation with measurement and numerical checks.</p>
+<p><strong>Evidence.</strong> Commissioned Book 11 outline, Chapter 13 register. Book 11 Chapter 12, prospective extensions.</p>
+<h2 id="r23.-bifactor-and-exploratory-structural-models">R23. Bifactor and exploratory structural models</h2>
+<p><strong>Status.</strong> Named.</p>
+<p><strong>Scope.</strong> A different loading structure changes the proposed measurement representation.</p>
+<p><strong>Audit question.</strong> Which loadings, rotations or general and specific factors identify the intended scores?</p>
+<p><strong>Further route.</strong> Compare the measurement structures and their score interpretations.</p>
+<p><strong>Evidence.</strong> Commissioned Book 11 outline, Chapter 13 register. Book 10 Unit 6, ordinal estimators.</p>
+<h2 id="r24.-effect-sizes-for-single-case-designs">R24. Effect sizes for single-case designs</h2>
+<p><strong>Status.</strong> Named.</p>
+<p><strong>Scope.</strong> A synthesis of repeated observations within a case needs effect definitions and dependence appropriate to that design.</p>
+<p><strong>Audit question.</strong> What design supports the contrast within a case, and what is pooled across cases?</p>
+<p><strong>Further route.</strong> Specialist single-case design and synthesis methods.</p>
+<p><strong>Evidence.</strong> Commissioned Book 11 outline, Chapter 13 register. Book 11 Chapter 12, prospective extensions.</p>
+<h2 id="r25.-splines-and-additive-models">R25. Splines and additive models</h2>
+<p><strong>Status.</strong> Named.</p>
+<p><strong>Scope.</strong> Flexible curves expand the mean-model choices beyond the inspected worked regressions.</p>
+<p><strong>Audit question.</strong> How are knots or smoothness chosen and evaluated without using the same outcomes twice?</p>
+<p><strong>Further route.</strong> A specified basis, penalty and validation rule in a specialist additive-model treatment.</p>
+<p><strong>Evidence.</strong> Commissioned Book 11 outline, Chapter 13 register. Book 9 opening, worked scope.</p>
+<h2 id="r26.-robust-and-quantile-regression">R26. Robust and quantile regression</h2>
+<p><strong>Status.</strong> Named.</p>
+<p><strong>Scope.</strong> Robust fitting and conditional-quantile targets require distinct definitions. A robust covariance estimate leaves an existing fit fixed.</p>
+<p><strong>Audit question.</strong> Is the question a conditional mean, a conditional quantile, or sensitivity to influential observations?</p>
+<p><strong>Further route.</strong> State the target and loss before choosing a robust or quantile fit.</p>
+<p><strong>Evidence.</strong> Commissioned Book 11 outline, Chapter 13 register. Book 9 opening, worked scope.</p>
+<h2 id="r27.-signal-detection-theory">R27. Signal detection theory</h2>
+<p><strong>Status.</strong> Taught.</p>
+<p><strong>Scope.</strong> Chapter 14 works the admitted month-three intention screen, its eligible frame, rates, missing-label bounds and a conditional probit representation, with an invented boundary example and three calculation routes. It does not teach the full range of SDT models or validate a latent distribution.</p>
+<p><strong>Audit question.</strong> What do the hit and false-alarm rates and latent assumptions allow the screen to claim?</p>
+<p><strong>Further route.</strong> Chapter 14 Case A, Book 10 Unit 10 for the observed screen, and Stanislaw and Todorov (1999) for further SDT methods.</p>
+<p><strong>Evidence.</strong> Commissioned Book 11 outline, Chapter 13 register. Book 11 Chapter 14, scoped learning cases.</p>
+<h2 id="r28.-bayes-factors">R28. Bayes factors</h2>
+<p><strong>Status.</strong> Taught.</p>
+<p><strong>Scope.</strong> Chapter 14 works a point-null versus proper normal-prior comparison using the declared Gaussian likelihood approximation from Chapter 9, three prior scales, conditional posterior probabilities and a verified toy example. This is a scoped normal case, not every Bayes factor or a finite design effect.</p>
+<p><strong>Audit question.</strong> Which two predictive models, including their priors, are being compared?</p>
+<p><strong>Further route.</strong> Chapter 14 Case B; the Bayesian volume for modeling and decision foundations; Kass and Raftery (1995) for model evidence and sensitivity.</p>
+<p><strong>Evidence.</strong> Commissioned Book 11 outline, Chapter 13 register. Book 11 Chapter 14, scoped learning cases.</p>
+<h2 id="source-editions-and-references">Source editions and references</h2>
+<p>Commissioned Book 11 outline, Chapter 13 register. Snapshot <code>book11-new-thread-starter-bundle-v1</code>, member <code>sources/book11-outline-and-starter-text.pdf</code>.</p>
+<p>Book 9 opening, worked scope. Snapshot <code>3df1140bce944ca44ef305515b9399294c810254</code>, member <code>manuscript/introduction.md</code>.</p>
+<p>Book 9 Unit 6, count models. Snapshot <code>3df1140bce944ca44ef305515b9399294c810254</code>, member <code>manuscript/unit06.md</code>.</p>
+<p>Book 10 Unit 6, ordinal estimators. Snapshot <code>943b4c0256de6fa8d644bad4a496db4f5d6b8a02</code>, member <code>manuscript/05b2-ordinal-items.md</code>.</p>
+<p>Book 10 Unit 12, practical scoring. Snapshot <code>943b4c0256de6fa8d644bad4a496db4f5d6b8a02</code>, member <code>manuscript/05h-practical-scoring.md</code>.</p>
+<p>Book 11 Chapter 10, verification. Current reader source.</p>
+<p>Book 11 Chapter 12, prospective extensions. Current reader source.</p>
+<p>Book 11 pending worked cases. Current reader source.</p>
+<p>Book 11 series route. Current reader source.</p>
+<p><a href="https://mc-stan.org/docs/reference-manual/analysis.html">Stan Reference Manual, Posterior Analysis</a>.</p>
+<p><a href="https://obssr.od.nih.gov/research-resources/mixed-methods-research">Creswell et al. (2011), Best practices for mixed methods research in the health sciences</a>.</p>
+<p><a href="https://doi.org/10.1111/j.2517-6161.1972.tb00899.x">Cox (1972), Regression Models and Life-Tables</a>.</p>
+<p><a href="https://doi.org/10.1023/A:1010933404324">Breiman (2001), Random Forests</a>.</p>
+<p><a href="https://doi.org/10.1037/1082-989X.9.4.466">Flora &amp; Curran (2004), alternative estimators for ordinal CFA</a>.</p>
+<p>Book 11 Chapter 14, scoped learning cases. Current reader source.</p>
+</body>
+</html>

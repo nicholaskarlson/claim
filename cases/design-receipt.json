@@ -1,0 +1,45 @@
+{
+  "contract": "B11-D6-OFFER-v1",
+  "target": "Finite mean offer minus no-offer effect on binary withdrawal before transfer by month 12 for the original randomized baseline roster",
+  "assignment_law": "Condition on fixed recorded totals in each college, with uniform allocations within colleges and independent allocation between colleges, as the analysis law used in Book 9.",
+  "assumptions": [
+    "Consistency",
+    "No interference",
+    "Correct known labels and a binary defined endpoint for every assigned person under each offer policy"
+  ],
+  "printed": {
+    "D6_N": "1,219",
+    "D6_BLOCKS": "16",
+    "D6_COMPLETION": "−3.25 to −1.45",
+    "D6_RADIUS": "12.89",
+    "D6_INTERVAL": "−16.15 to +11.45",
+    "D6_TOY_SCHEDULES": "36",
+    "D6_TOY_STAT_ZERO": "−100.00",
+    "D6_TOY_STAT_ONE": "−75.00",
+    "D6_TOY_TAIL_ZERO": "2/36",
+    "D6_TOY_TAIL_ONE": "6/36",
+    "D6_TOY_P_ZERO": "0.0556",
+    "D6_TOY_P_ONE": "0.1667",
+    "D6_TOY_MAX_P": "0.1667"
+  },
+  "fixture": {
+    "toy/schedules": 36,
+    "toy/if0/stat": -1,
+    "toy/if0/extremes": 2,
+    "toy/if0/p": 0.05555555555555555,
+    "toy/if1/stat": -0.75,
+    "toy/if1/extremes": 6,
+    "toy/if1/p": 0.16666666666666666,
+    "toy/max_p": 0.16666666666666666
+  },
+  "routes": [
+    "NumPy",
+    "standard-library Python",
+    "base R"
+  ],
+  "interpretation": {
+    "D6_COMPLETION": "Realized, college-weighted statistic across unknown-label completions",
+    "D6_INTERVAL": "Conservative interval for the finite offer effect under the stated conditional law",
+    "D6_TOY_MAX_P": "Maximum exact sharp-null p value across two invented completions"
+  }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Cumulative evidence across colleges</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Cumulative evidence across colleges</h1>
+</header>
+<p><a href="../index.html">Companion home</a></p>
+<h2 id="what-the-observed-grades-support">What the observed grades support</h2>
+<p>The comparison uses 1,116 observed month-12 GPAs from the original 1,219 randomized baseline respondents in 16 fictional Tonmick colleges. The within-college offer minus no-offer contrasts range from −0.160 to +0.330 GPA points. The mean of the college contrasts, with equal weight per college, is +0.085. The common Book 9 slope is +0.085.</p>
+<p>The working random-effects mean is +0.079 and its approximate 95% interval is −0.004 to +0.163. The estimated between-college standard deviation is 0.094. The approximate prediction interval for the underlying contrast in a comparable college is −0.139 to +0.298. These are comparisons among observed grades in one fictional study. They depend on the working distribution and the grade observation rule.</p>
+<h2 id="reproduce-the-hand-check">Reproduce the hand check</h2>
+<p>In the <a href="../fixtures/synthesis/README.md">four invented colleges</a>, the equally weighted mean is +0.20, the weighted dispersion is 30 and the between-college variance is 0.24 squared GPA points. Run <code>python3 scripts/check_synthesis.py --fixture-only</code> with NumPy and base R to compare routes, including the zero-heterogeneity boundary.</p>
+<p>The <a href="synthesis-receipt.json">aggregate receipt</a> records the source, method and printed results. The <a href="claim-audits.html">Claim Audits</a> show which additional evidence each claim would require. The public exercise uses the invented records.</p>
+</body>
+</html>

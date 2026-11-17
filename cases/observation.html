@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Who was observed</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Who was observed</h1>
+</header>
+<p><a href="../index.html">Companion home</a></p>
+<h2 id="check-the-roster-and-the-outcome-labels">Check the roster and the outcome labels</h2>
+<p>The original Tonmick invitation roster has 1,600 invitees, 257 recorded withdrawals before transfer by month twelve, and 11 unknown labels after consent withdrawal. The fraction among known labels is 16.17%. Holding known labels fixed gives the full-roster bounds 16.06% to 16.75%, under the actual mix of offer and administrative policies.</p>
+<p>The Book 8 Unit 10 event-time estimate of 16.11% uses the original roster shares of the two assigned respondent groups and the nonrespondents. Its interpretation depends on the censoring and follow-up support assumptions. The same Book 8 release weights complete stress scores in Unit 8 under a different observation rule.</p>
+<h2 id="check-the-weighting-with-invented-counts">Check the weighting with invented counts</h2>
+<p>The <a href="../fixtures/observation/README.md">two-stratum fixture</a> supplies ten roster members in each stratum and uneven observation. The known-outcome fraction is 20.00%. Weighting to the roster gives 31.25% if the observed rate represents each stratum. The binary support range is 10% to 60%. What happens if an entire target stratum has no known outcomes?</p>
+<p>Run <code>python3 scripts/check_observation.py --fixture-only</code> from the companion root. See the <a href="observation-receipt.json">aggregate receipt</a>, the <a href="../target-worksheet.html">target worksheet</a> and <a href="https://github.com/nicholaskarlson/missing-data/releases/tag/v0.1.0">Book 8 companion release</a>.</p>
+</body>
+</html>

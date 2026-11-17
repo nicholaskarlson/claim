@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>What the design identifies</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">What the design identifies</h1>
+</header>
+<p><a href="../index.html">Companion home</a></p>
+<h2 id="hold-the-roster-and-compare-the-offer">Hold the roster and compare the offer</h2>
+<p>The target is the average offer-minus-no-offer effect on withdrawal before competing transfer by month twelve among the original 1,219 assigned respondents in 16 colleges. The known-label difference is −2.2 percentage points. With assignment fixed and all assigned people in the college denominators, the completed statistic can range from −3.25 to −1.45 percentage points.</p>
+<h2 id="compute-the-conservative-interval">Compute the conservative interval</h2>
+<p>Let n1 and n0 be the two assigned arm counts in a college of size Nc. For binary outcomes, the finite population variance in either arm is at most Nc / [4(Nc − 1)]. Multiply this bound by (1/n1 + 1/n0). This bounds the college estimator variance because its exact formula subtracts the nonnegative variance of individual effects divided by Nc. Multiply each bound by the square of the college’s roster share and sum over colleges.</p>
+<p>This argument uses uniform fixed-count allocation within colleges, independent allocation across colleges, consistency, no interference and a binary outcome defined under both policies. The design variance bound divided by 0.05, then square-rooted, gives a Chebyshev radius of about 12.89 percentage points. Expanding the completed-statistic range by that radius gives the conservative design interval −16.15 to +11.45 percentage points, with endpoints rounded outward.</p>
+<h2 id="complete-one-unknown-label-and-repeat-the-exact-test">Complete one unknown label and repeat the exact test</h2>
+<p>The <a href="../fixtures/design/README.md">invented fixture</a> holds the offer count at two per college. If B4’s unknown outcome is zero, the inclusive two-sided tail is 2/36, giving p = 0.0556. If it is one, the tail is 6/36, giving p = 0.1667. The maximum is conservative for the sharp null. The two p values refer to the invented experiment.</p>
+<p>Run <code>python3 scripts/check_design.py --fixture-only</code> from the companion root. See the <a href="design-receipt.json">aggregate receipt</a> and <a href="probability.html">Chapter 3 probability case</a>.</p>
+</body>
+</html>

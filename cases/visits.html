@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>What the model adds</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">What the model adds</h1>
+</header>
+<p><a href="../index.html">Companion home</a></p>
+<h2 id="match-the-denominator-to-the-decision">Match the denominator to the decision</h2>
+<p>The 1,219 original randomized respondents contributed 1,338 and 1,527 archived support visits in the no-offer and offered groups. The recorded month totals were 6,562.492 and 6,610.673. The offer-to-no-offer aggregate rate ratio was 1.133. These are comparisons of the recorded groups.</p>
+<p>For the <a href="../fixtures/visits/README.md">four invented records</a>, the visit ratio per respondent is 1.50 and the aggregate ratio per enrolled month is 0.75. Run <code>python3 scripts/check_visits.py --fixture-only</code> to check both and the refusal of a zero exposure.</p>
+<h2 id="compare-uncertainty-around-the-same-fit">Compare uncertainty around the same fit</h2>
+<p>The adjusted Poisson rate ratio is 1.135. Its model interval is 1.054 to 1.221, the quasi-Poisson interval is 0.993 to 1.296, and the row-HC1 interval is 0.990 to 1.300. The college calculation sums individual scores within each college and uses products of the college sums. Its working t interval is 1.005 to 1.281. The college calculation conditions on recorded time and uses sixteen colleges as working independent units.</p>
+<p>The archive contains 369 zero counts. The Poisson and NB2 fits expect 170.8 and 383.1, respectively. Ask what aspects of the mean, variance and observation each calculation examines. The <a href="visits-receipt.json">aggregate receipt</a> records the numerical comparisons. Chapter 6 discusses the <a href="design.html">assignment law</a>.</p>
+</body>
+</html>

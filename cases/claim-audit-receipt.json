@@ -1,0 +1,101 @@
+{
+  "contract": "B11-A11-CARDS-v1",
+  "cards": [
+    {
+      "id": "S1",
+      "kind": "Description",
+      "title": "Who was assigned no offer?",
+      "original": "Fifteen percent of students without mentoring withdrew in their first year.",
+      "rewrite": "Of the 610 baseline respondents assigned no mentoring offer, 93 had a recorded withdrawal before transfer by month 12 and 7 outcomes were unknown. Among the 603 with a known outcome, 93 withdrew.",
+      "next": "Plan permitted registry follow-up through month 12 and document which outcomes still cannot be observed.",
+      "source_contract": "B11-S1-OBS-v1",
+      "source_case": "s1.html",
+      "bindings": {
+        "S1_NO_BOUNDS": "15.2% to 16.4%",
+        "S1_NO_EVENTS": "93",
+        "S1_NO_KNOWN": "603",
+        "S1_NO_KNOWN_RATE": "93/603 (15.4%)",
+        "S1_NO_N": "610",
+        "S1_NO_RECORDED": "93/610 (15.2%)",
+        "S1_NO_UNKNOWN": "7"
+      }
+    },
+    {
+      "id": "S2",
+      "kind": "Population description",
+      "title": "Which students does the percentage represent?",
+      "original": "About fifteen percent of first-year students at these colleges withdraw.",
+      "rewrite": "In the 1,600-person Tonmick invitation roster, 257 withdrawals before transfer by month 12 were recorded and 11 outcomes were unknown. Holding the known labels fixed, the roster withdrawal fraction ranges from 16.06% to 16.75%.",
+      "next": "Compare a defined all-enrollee roster with the invitation list and measure withdrawal coverage among those left out.",
+      "source_contract": "B11-O5-FRAME-v1",
+      "source_case": "observation.html",
+      "bindings": {
+        "O5_ALL_EVENTS": "257",
+        "O5_ALL_N": "1,600",
+        "O5_ALL_UNKNOWN": "11",
+        "O5_BOUNDS": "16.06% to 16.75%"
+      }
+    },
+    {
+      "id": "S3",
+      "kind": "Causal policy contrast",
+      "title": "What did the offer change?",
+      "original": "Mentoring reduced withdrawal by about two percentage points.",
+      "rewrite": "Under the stated assignment and outcome assumptions, the conservative 95% design interval for the effect of a mentoring offer on withdrawal before transfer by month 12 is −16.15 to +11.45 percentage points in the randomized cohort.",
+      "next": "Plan a new blocked offer study with more colleges and more complete permitted outcome follow-up, sized for a predeclared worthwhile reduction.",
+      "source_contract": "B11-D6-OFFER-v1",
+      "source_case": "design.html",
+      "bindings": {
+        "D6_COMPLETION": "−3.25 to −1.45",
+        "D6_INTERVAL": "−16.15 to +11.45",
+        "D6_N": "1,219"
+      }
+    },
+    {
+      "id": "S4",
+      "kind": "Conditional model comparison",
+      "title": "What did the service count capture?",
+      "original": "Mentoring increased help-seeking by 13 percent (p < .001).",
+      "rewrite": "For archived support visits, the adjusted Poisson offer rate ratio was 1.135 at common covariates and recorded enrollment time. The working 95% intervals were 0.990 to 1.300 with row-level robust uncertainty and 1.005 to 1.281 with the approximate college-grouped calculation.",
+      "next": "Use a fixed follow-up window and identical recording across services in a study of the offer’s effect on cumulative use.",
+      "source_contract": "B11-M7-VISITS-v1",
+      "source_case": "visits.html",
+      "bindings": {
+        "M7_COLLEGE_CI": "1.005 to 1.281",
+        "M7_HC1_CI": "0.990 to 1.300",
+        "M7_POISSON_IRR": "1.135"
+      }
+    },
+    {
+      "id": "S5",
+      "kind": "Observed-score association",
+      "title": "Are those scores or underlying states?",
+      "original": "Stress and wellbeing are moderately related (r = −.36).",
+      "rewrite": "Among 922 Tonmick baseline respondents with both five-item scores complete, the recorded stress and wellbeing scores had a Pearson correlation of −0.363.",
+      "next": "Collect a second measure for each construct at the same baseline occasion and examine whether shared measurement errors could account for the observed association.",
+      "source_contract": "B11-V10-TRACE-v1",
+      "source_case": "reproduce.html",
+      "bindings": {
+        "R10_SENTENCE": "Among 922 Tonmick baseline respondents with both five-item scores complete, the recorded stress and wellbeing scores had a Pearson correlation of −0.363."
+      }
+    },
+    {
+      "id": "S6",
+      "kind": "Prediction on later records",
+      "title": "Where did the forecast work?",
+      "original": "A model built from entry records identifies students at risk of withdrawal.",
+      "rewrite": "On 100,000 later simulated Tonmick records under no mentoring offer, the frozen enrollment forecast had a Brier score of 0.1377 versus 0.1489 for the fixed development comparator. Its AUC was 0.689 for withdrawal before transfer by month 12.",
+      "next": "Before rollout at a new college, score the frozen rule and comparator on matched later outcomes and check calibration where the office plans to act.",
+      "source_contract": "B11-P8-FROZEN-v1",
+      "source_case": "forecast.html",
+      "bindings": {
+        "P8_AUC": "0.689",
+        "P8_BASE_BRIER": "0.1489",
+        "P8_BRIER": "0.1377",
+        "P8_EVENT_FRAC": "18.20%",
+        "P8_MEAN_PROB": "17.27%",
+        "P8_N": "100,000"
+      }
+    }
+  ]
+}

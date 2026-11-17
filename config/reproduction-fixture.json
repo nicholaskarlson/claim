@@ -1,0 +1,35 @@
+{
+  "id": "B11-V10-FIXTURE-v1",
+  "fixture_sha256": "b70567b21cdc8111628f46d9db4a6dfb6004298a1d80eb194f800bb8c2898fca",
+  "inputs": {
+    "baseline": 4,
+    "colleges": 2,
+    "paired": 3,
+    "r": -1.0
+  },
+  "keyed_sums": [
+    [
+      "A",
+      5,
+      15
+    ],
+    [
+      "B",
+      10,
+      10
+    ],
+    [
+      "C",
+      15,
+      5
+    ]
+  ],
+  "absolute_tolerance": 1e-12,
+  "code_sha256": {
+    "scripts/s5_numpy.py": "25c26b1bf884cb40d6dff3317b9d51bcb0b0801b6fce1e71830c46a3ee8a7cf9",
+    "scripts/s5_scalar.py": "5fc2660ad7f75ddc6d6477b3340177a96dc507aadac52d5c67da117f547a13eb",
+    "scripts/s5_base.R": "91230e419b274818798d81907be1d6d592beae523237f54faba5cb180cb2b2d6",
+    "scripts/check_s5.py": "b3b094b46cd1473a15d2bfdba7fbf463a52d3a7f753574b1d2712e5e667c5725",
+    "scripts/project_baseline.py": "a65caad03956781bfc770b84fae6b22d0deb0e7d6c4e8342ab9cd1aec156a861"
+  }
+}

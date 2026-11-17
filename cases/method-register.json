@@ -1,0 +1,547 @@
+{
+  "contract": "B11-R13-COVERAGE-v1",
+  "scope": "The 28 topics proposed in the commissioning outline, reconciled against inspected Book 9, Book 10 and current Book 11 sources. Statuses describe this reader's documented route. Books 12–15 and the Chapter 14 cases remain prospective.",
+  "statuses": {
+    "Taught": "A worked case with declared data, computation checks, problems and full solutions is available in an inspected source.",
+    "Named": "Defined here or in an inspected source, with a question and a route for further work.",
+    "Boundary": "Outside the worked scope documented for this reader, with the additional analysis or evidence specified.",
+    "Planned": "A future case or volume is proposed and still awaits its completed checks."
+  },
+  "sources": {
+    "brief": {
+      "label": "Commissioned Book 11 outline, Chapter 13 register",
+      "snapshot": "book11-new-thread-starter-bundle-v1",
+      "member": "sources/book11-outline-and-starter-text.pdf",
+      "kind": "proposal",
+      "notes": "All 28 rows and six proposed statuses originate here. A proposal supplies scope, not implementation evidence.",
+      "member_sha256": "26c29390a4deb239171694942eba3b995654a5934eb416ef213ff5d29f60c875"
+    },
+    "book9_scope": {
+      "label": "Book 9 opening, worked scope",
+      "snapshot": "3df1140bce944ca44ef305515b9399294c810254",
+      "member": "manuscript/introduction.md",
+      "member_sha256": "28b00a2dabda31456f19625b83bfc22f8c448e2679ad8922cc88bbfb00b3d423",
+      "kind": "inspected snapshot"
+    },
+    "book9_counts": {
+      "label": "Book 9 Unit 6, count models",
+      "snapshot": "3df1140bce944ca44ef305515b9399294c810254",
+      "member": "manuscript/unit06.md",
+      "member_sha256": "1742fcc602ce6171960c17b847cd5af9837ee8ede49fd11a8bf8849fc9429719",
+      "kind": "inspected snapshot"
+    },
+    "book10_ordinal": {
+      "label": "Book 10 Unit 6, ordinal estimators",
+      "snapshot": "943b4c0256de6fa8d644bad4a496db4f5d6b8a02",
+      "member": "manuscript/05b2-ordinal-items.md",
+      "member_sha256": "b59d16c8ead59be71f898357256a2eda8617df3304151f264727f99a3f205556",
+      "kind": "inspected snapshot"
+    },
+    "book10_scoring": {
+      "label": "Book 10 Unit 12, practical scoring",
+      "snapshot": "943b4c0256de6fa8d644bad4a496db4f5d6b8a02",
+      "member": "manuscript/05h-practical-scoring.md",
+      "member_sha256": "5761ec42c31804d98cf123fb560167d26b1ae317261e3ec335130d88ab77ec47",
+      "kind": "inspected snapshot"
+    },
+    "chapter10": {
+      "label": "Book 11 Chapter 10, verification",
+      "kind": "current authoring source"
+    },
+    "chapter12": {
+      "label": "Book 11 Chapter 12, prospective extensions",
+      "kind": "current authoring source"
+    },
+    "future": {
+      "label": "Book 11 pending worked cases",
+      "kind": "current authoring source"
+    },
+    "series": {
+      "label": "Book 11 series route",
+      "kind": "current authoring source"
+    },
+    "stan": {
+      "label": "Stan Reference Manual, Posterior Analysis",
+      "url": "https://mc-stan.org/docs/reference-manual/analysis.html",
+      "kind": "external reference",
+      "review_date": "2026-11-17",
+      "notes": "Convergence diagnostics, effective sample size and Monte Carlo standard error."
+    },
+    "mixed": {
+      "label": "Creswell et al. (2011), Best practices for mixed methods research in the health sciences",
+      "url": "https://obssr.od.nih.gov/research-resources/mixed-methods-research",
+      "kind": "external reference",
+      "review_date": "2026-11-17",
+      "notes": "Mixed methods integrates qualitative and quantitative inquiry."
+    },
+    "cox": {
+      "label": "Cox (1972), Regression Models and Life-Tables",
+      "url": "https://doi.org/10.1111/j.2517-6161.1972.tb00899.x",
+      "kind": "external reference",
+      "review_date": "2026-11-17"
+    },
+    "forest": {
+      "label": "Breiman (2001), Random Forests",
+      "url": "https://doi.org/10.1023/A:1010933404324",
+      "kind": "external reference",
+      "review_date": "2026-11-17"
+    },
+    "ordinal": {
+      "label": "Flora & Curran (2004), alternative estimators for ordinal CFA",
+      "url": "https://doi.org/10.1037/1082-989X.9.4.466",
+      "kind": "external reference",
+      "review_date": "2026-11-17"
+    },
+    "current14": {
+      "label": "Book 11 Chapter 14, scoped learning cases",
+      "kind": "current authoring source"
+    }
+  },
+  "topics": [
+    {
+      "id": "R01",
+      "original_topic": "Bayesian estimation by MCMC, including Bayesian structural models and Bayesian synthesis",
+      "topic": "MCMC and Bayesian structural or synthesis models",
+      "status": "Boundary",
+      "reason": "Posterior sampling needs convergence and Monte Carlo error checks beyond the deterministic examples inspected here.",
+      "audit_question": "Which posterior quantity is estimated, and how large is its simulation error?",
+      "next_route": "Stan posterior-analysis diagnostics; reduce the model to an analytic or grid example.",
+      "sources": [
+        "brief",
+        "book9_scope",
+        "stan"
+      ],
+      "in_reader": true,
+      "originally_proposed": false
+    },
+    {
+      "id": "R02",
+      "original_topic": "Tree ensembles, boosting and neural networks",
+      "topic": "Tree ensembles, boosting and neural networks",
+      "status": "Boundary",
+      "reason": "The current forecast example uses a frozen enrollment model. Training and tuning another learner need a separate contract.",
+      "audit_question": "Were preprocessing and tuning confined to development, and how was the frozen forecast scored?",
+      "next_route": "Chapter 8 scoring and Chapter 10 provenance; specialist training and validation.",
+      "sources": [
+        "brief",
+        "book9_scope",
+        "forest",
+        "chapter10"
+      ],
+      "in_reader": true,
+      "originally_proposed": false
+    },
+    {
+      "id": "R03",
+      "original_topic": "Text as data and AI-coded measures",
+      "topic": "Text as data and AI-coded measures",
+      "status": "Boundary",
+      "reason": "Preserving generated labels and auditing their use starts the check. A text classifier also needs a worked validation study.",
+      "audit_question": "Do the labels represent the construct and use intended?",
+      "next_route": "Chapter 10 preservation of labels and code; Chapter 4 measurement evidence.",
+      "sources": [
+        "brief",
+        "chapter10"
+      ],
+      "in_reader": true,
+      "originally_proposed": true
+    },
+    {
+      "id": "R04",
+      "original_topic": "Limited-information ordinal estimators such as WLSMV",
+      "topic": "WLSMV and limited-information ordinal estimation",
+      "status": "Named",
+      "reason": "Book 10 distinguishes its worked ordinal fitting criterion from the extra covariance and test-statistic machinery of WLSMV.",
+      "audit_question": "Which estimator, weight matrix and adjustment produced the reported fit and uncertainty?",
+      "next_route": "Book 10 Unit 6 and Flora and Curran (2004).",
+      "sources": [
+        "brief",
+        "book10_ordinal",
+        "ordinal"
+      ],
+      "in_reader": true,
+      "originally_proposed": false
+    },
+    {
+      "id": "R05",
+      "original_topic": "Mixture and latent-class models, including growth mixtures",
+      "topic": "Mixture and latent-class models",
+      "status": "Boundary",
+      "reason": "Estimating a latent grouping calls for its own identification, optimization and classification checks.",
+      "audit_question": "Do the proposed classes describe stable structure or a feature of the fitted distribution?",
+      "next_route": "Specialist mixture-model treatment with start-value and model sensitivity.",
+      "sources": [
+        "brief",
+        "book9_scope"
+      ],
+      "in_reader": false,
+      "originally_proposed": false
+    },
+    {
+      "id": "R06",
+      "original_topic": "Partial least squares path modeling",
+      "topic": "Partial least squares path modeling",
+      "status": "Boundary",
+      "reason": "The intended composites or latent variables and the fitting objective need an explicit target before choosing a path model.",
+      "audit_question": "What quantity does each path represent, and what would give it a causal interpretation?",
+      "next_route": "State the score construction and estimand; seek a specialist account of the chosen model.",
+      "sources": [
+        "brief",
+        "chapter12"
+      ],
+      "in_reader": true,
+      "originally_proposed": false
+    },
+    {
+      "id": "R07",
+      "original_topic": "Automated causal discovery",
+      "topic": "Automated causal discovery",
+      "status": "Boundary",
+      "reason": "A learned graph needs assumptions about measured variables, omitted causes and the data-generating conditions.",
+      "audit_question": "Which graph features are identified under the declared assumptions?",
+      "next_route": "Design and subject-matter constraints alongside a specialist discovery analysis.",
+      "sources": [
+        "brief",
+        "chapter12"
+      ],
+      "in_reader": false,
+      "originally_proposed": false
+    },
+    {
+      "id": "R08",
+      "original_topic": "Network models of partial correlations",
+      "topic": "Networks of partial correlations",
+      "status": "Named",
+      "reason": "A partial-correlation network describes conditional association under its model.",
+      "audit_question": "What conditioning set and regularization define an edge?",
+      "next_route": "Read the chosen network estimator and uncertainty procedure before interpreting edges.",
+      "sources": [
+        "brief",
+        "chapter12"
+      ],
+      "in_reader": false,
+      "originally_proposed": false
+    },
+    {
+      "id": "R09",
+      "original_topic": "Cox and other continuous-time survival regression",
+      "topic": "Cox and continuous-time survival regression",
+      "status": "Boundary",
+      "reason": "The event-time regression, observation intervals and competing events need their own specification.",
+      "audit_question": "Is the target a hazard contrast, an event probability, or an effect at a fixed horizon?",
+      "next_route": "Cox (1972); align exact, tied or interval-recorded times with the chosen event model.",
+      "sources": [
+        "brief",
+        "book9_scope",
+        "cox"
+      ],
+      "in_reader": true,
+      "originally_proposed": false
+    },
+    {
+      "id": "R10",
+      "original_topic": "Time-series forecasting",
+      "topic": "Time-series forecasting",
+      "status": "Boundary",
+      "reason": "Predicting an ordered series requires its own time-dependent validation and error structure.",
+      "audit_question": "What information was available before each forecast origin?",
+      "next_route": "Use time-respecting development and evaluation in a specialist forecasting treatment.",
+      "sources": [
+        "brief",
+        "book9_scope"
+      ],
+      "in_reader": false,
+      "originally_proposed": false
+    },
+    {
+      "id": "R11",
+      "original_topic": "Spatial statistics",
+      "topic": "Spatial statistics",
+      "status": "Boundary",
+      "reason": "The geographic target, spatial dependence and sampling structure require a separate worked design.",
+      "audit_question": "Does location change the independent units, exposure or population of interest?",
+      "next_route": "Choose a spatial model and sampling argument for the actual geographic question.",
+      "sources": [
+        "brief"
+      ],
+      "in_reader": false,
+      "originally_proposed": false
+    },
+    {
+      "id": "R12",
+      "original_topic": "Network and diagnostic-accuracy meta-analysis",
+      "topic": "Network and diagnostic-accuracy meta-analysis",
+      "status": "Boundary",
+      "reason": "These synthesis targets need comparisons and joint structures beyond the Chapter 12 college example.",
+      "audit_question": "Are the contrasts comparable across networks or diagnostic thresholds?",
+      "next_route": "Specialist synthesis methods with connected comparisons, thresholds and dependence.",
+      "sources": [
+        "brief",
+        "chapter12"
+      ],
+      "in_reader": false,
+      "originally_proposed": false
+    },
+    {
+      "id": "R13",
+      "original_topic": "Test construction and equating",
+      "topic": "Test construction and equating",
+      "status": "Boundary",
+      "reason": "Book 10 compares scores and a fixed short form. Operational linking of new forms needs its own evidence.",
+      "audit_question": "What permits the same score interpretation on the two forms?",
+      "next_route": "Specialist test design and equating, with common-item or common-person linking evidence.",
+      "sources": [
+        "brief",
+        "book10_scoring"
+      ],
+      "in_reader": false,
+      "originally_proposed": false
+    },
+    {
+      "id": "R14",
+      "original_topic": "Computerized adaptive testing",
+      "topic": "Computerized adaptive testing",
+      "status": "Boundary",
+      "reason": "Selecting the next item is a delivery and scoring policy that requires calibrated items and stopping rules.",
+      "audit_question": "How do item selection and stopping affect precision and comparable interpretation?",
+      "next_route": "Specialist adaptive testing with item-bank calibration and exposure checks.",
+      "sources": [
+        "brief",
+        "book10_scoring"
+      ],
+      "in_reader": false,
+      "originally_proposed": false
+    },
+    {
+      "id": "R15",
+      "original_topic": "Cognitive process models: drift-diffusion, reinforcement learning",
+      "topic": "Cognitive process models",
+      "status": "Boundary",
+      "reason": "Process parameters require a specified response or learning model and checks that its parameters can be recovered.",
+      "audit_question": "Which observed responses identify the proposed mechanism?",
+      "next_route": "A small known-parameter example and specialist process-model validation.",
+      "sources": [
+        "brief"
+      ],
+      "in_reader": false,
+      "originally_proposed": true
+    },
+    {
+      "id": "R16",
+      "original_topic": "Physiological and neuroimaging pipelines",
+      "topic": "Physiological and neuroimaging pipelines",
+      "status": "Boundary",
+      "reason": "Acquisition and preprocessing determine the analyzed signal and need their own validation record.",
+      "audit_question": "Which preprocessing choices change the measurement and uncertainty?",
+      "next_route": "Domain-specific acquisition, preprocessing and reproducibility guidance.",
+      "sources": [
+        "brief"
+      ],
+      "in_reader": false,
+      "originally_proposed": true
+    },
+    {
+      "id": "R17",
+      "original_topic": "Qualitative and mixed-methods research",
+      "topic": "Qualitative and mixed-methods research",
+      "status": "Boundary",
+      "reason": "The series focuses on quantitative claims. An integrated qualitative and quantitative design needs additional methods.",
+      "audit_question": "How are the strands designed, interpreted and integrated to answer the question?",
+      "next_route": "Creswell et al. (2011) and specialist qualitative design and analysis.",
+      "sources": [
+        "brief",
+        "mixed"
+      ],
+      "in_reader": true,
+      "originally_proposed": true
+    },
+    {
+      "id": "R18",
+      "original_topic": "Zero-inflated and hurdle models",
+      "topic": "Zero-inflated and hurdle count models",
+      "status": "Named",
+      "reason": "Book 9 maps these alternatives while its worked count fit reaches Poisson and negative binomial models.",
+      "audit_question": "What creates a zero, and does the model distinguish zero generation from positive counts?",
+      "next_route": "Book 9 Unit 6 count-model map and a specialist model with its own diagnostics.",
+      "sources": [
+        "brief",
+        "book9_counts"
+      ],
+      "in_reader": true,
+      "originally_proposed": false
+    },
+    {
+      "id": "R19",
+      "original_topic": "Sequential and adaptive designs",
+      "topic": "Sequential and adaptive designs",
+      "status": "Boundary",
+      "reason": "Interim looks and design adaptations change the analysis plan and error properties.",
+      "audit_question": "Which stopping and adaptation rules were declared, and what error criterion do they control?",
+      "next_route": "A specialist design and analysis covering the actual interim decisions.",
+      "sources": [
+        "brief",
+        "book9_scope"
+      ],
+      "in_reader": false,
+      "originally_proposed": false
+    },
+    {
+      "id": "R20",
+      "original_topic": "Full multilevel structural models",
+      "topic": "Multilevel structural models",
+      "status": "Boundary",
+      "reason": "Within- and between-setting paths require level-specific measurement and a structural model.",
+      "audit_question": "Which paths are defined within a person or college, and which compare settings?",
+      "next_route": "Prospective structural route, with a specialist treatment of levels and identification.",
+      "sources": [
+        "brief",
+        "chapter12"
+      ],
+      "in_reader": false,
+      "originally_proposed": false
+    },
+    {
+      "id": "R21",
+      "original_topic": "Models with feedback loops",
+      "topic": "Models with feedback loops",
+      "status": "Named",
+      "reason": "Feedback makes temporal order, equilibrium and identification central to interpreting paths.",
+      "audit_question": "What observations or interventions distinguish the directions in the loop?",
+      "next_route": "An explicitly dynamic or identified simultaneous model.",
+      "sources": [
+        "brief",
+        "chapter12"
+      ],
+      "in_reader": false,
+      "originally_proposed": false
+    },
+    {
+      "id": "R22",
+      "original_topic": "Latent interaction estimators",
+      "topic": "Latent interactions",
+      "status": "Named",
+      "reason": "An interaction of latent variables requires its own measurement and product model alongside the observed-variable case.",
+      "audit_question": "How are both latent quantities scaled and how is their product identified?",
+      "next_route": "Specialist latent-interaction estimation with measurement and numerical checks.",
+      "sources": [
+        "brief",
+        "chapter12"
+      ],
+      "in_reader": false,
+      "originally_proposed": false
+    },
+    {
+      "id": "R23",
+      "original_topic": "Bifactor and exploratory structural models",
+      "topic": "Bifactor and exploratory structural models",
+      "status": "Named",
+      "reason": "A different loading structure changes the proposed measurement representation.",
+      "audit_question": "Which loadings, rotations or general and specific factors identify the intended scores?",
+      "next_route": "Compare the measurement structures and their score interpretations.",
+      "sources": [
+        "brief",
+        "book10_ordinal"
+      ],
+      "in_reader": false,
+      "originally_proposed": false
+    },
+    {
+      "id": "R24",
+      "original_topic": "Effect sizes for single-case designs",
+      "topic": "Effect sizes for single-case designs",
+      "status": "Named",
+      "reason": "A synthesis of repeated observations within a case needs effect definitions and dependence appropriate to that design.",
+      "audit_question": "What design supports the contrast within a case, and what is pooled across cases?",
+      "next_route": "Specialist single-case design and synthesis methods.",
+      "sources": [
+        "brief",
+        "chapter12"
+      ],
+      "in_reader": false,
+      "originally_proposed": false
+    },
+    {
+      "id": "R25",
+      "original_topic": "Splines and additive models",
+      "topic": "Splines and additive models",
+      "status": "Named",
+      "reason": "Flexible curves expand the mean-model choices beyond the inspected worked regressions.",
+      "audit_question": "How are knots or smoothness chosen and evaluated without using the same outcomes twice?",
+      "next_route": "A specified basis, penalty and validation rule in a specialist additive-model treatment.",
+      "sources": [
+        "brief",
+        "book9_scope"
+      ],
+      "in_reader": true,
+      "originally_proposed": true
+    },
+    {
+      "id": "R26",
+      "original_topic": "Robust and quantile regression",
+      "topic": "Robust and quantile regression",
+      "status": "Named",
+      "reason": "Robust fitting and conditional-quantile targets require distinct definitions. A robust covariance estimate leaves an existing fit fixed.",
+      "audit_question": "Is the question a conditional mean, a conditional quantile, or sensitivity to influential observations?",
+      "next_route": "State the target and loss before choosing a robust or quantile fit.",
+      "sources": [
+        "brief",
+        "book9_scope"
+      ],
+      "in_reader": true,
+      "originally_proposed": true
+    },
+    {
+      "id": "R27",
+      "original_topic": "Signal detection theory",
+      "topic": "Signal detection theory",
+      "status": "Taught",
+      "reason": "Chapter 14 works the admitted month-three intention screen, its eligible frame, rates, missing-label bounds and a conditional probit representation, with an invented boundary example and three calculation routes. It does not teach the full range of SDT models or validate a latent distribution.",
+      "audit_question": "What do the hit and false-alarm rates and latent assumptions allow the screen to claim?",
+      "next_route": "Chapter 14 Case A, Book 10 Unit 10 for the observed screen, and Stanislaw and Todorov (1999) for further SDT methods.",
+      "sources": [
+        "brief",
+        "current14"
+      ],
+      "in_reader": true,
+      "originally_proposed": false
+    },
+    {
+      "id": "R28",
+      "original_topic": "Bayes factors",
+      "topic": "Bayes factors",
+      "status": "Taught",
+      "reason": "Chapter 14 works a point-null versus proper normal-prior comparison using the declared Gaussian likelihood approximation from Chapter 9, three prior scales, conditional posterior probabilities and a verified toy example. This is a scoped normal case, not every Bayes factor or a finite design effect.",
+      "audit_question": "Which two predictive models, including their priors, are being compared?",
+      "next_route": "Chapter 14 Case B; the Bayesian volume for modeling and decision foundations; Kass and Raftery (1995) for model evidence and sensitivity.",
+      "sources": [
+        "brief",
+        "current14"
+      ],
+      "in_reader": true,
+      "originally_proposed": false
+    }
+  ],
+  "worked_examples": [
+    {
+      "topic": "Recorded-score correlation",
+      "status": "Taught",
+      "component": "reproduction",
+      "contract": "B11-V10-TRACE-v1",
+      "route": "Chapters 1, 4 and 10"
+    },
+    {
+      "topic": "Frozen forecast scoring",
+      "status": "Taught",
+      "component": "forecast",
+      "contract": "B11-P8-FROZEN-v1",
+      "route": "Chapter 8"
+    },
+    {
+      "topic": "Working synthesis of observed-grade contrasts",
+      "status": "Taught",
+      "component": "synthesis",
+      "contract": "B11-S12-COLLEGES-v1",
+      "route": "Chapter 12"
+    }
+  ]
+}

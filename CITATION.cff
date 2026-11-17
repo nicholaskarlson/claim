@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: Cite this version of the companion materials.
+title: The Claim Ceiling companion
+type: software
+authors:
+  - family-names: Karlson
+    given-names: Nicholas Elliott
+version: 0.14.0
+repository-code: https://github.com/nicholaskarlson/claim

@@ -1,0 +1,17 @@
+{
+  "arm0/n": 2,
+  "arm0/visits": 4,
+  "arm0/months": 4,
+  "arm0/mean_count": 2,
+  "arm0/aggregate_rate": 1,
+  "arm0/mean_individual_rate": 0.6666666666666666,
+  "arm1/n": 2,
+  "arm1/visits": 6,
+  "arm1/months": 8,
+  "arm1/mean_count": 3,
+  "arm1/aggregate_rate": 0.75,
+  "arm1/mean_individual_rate": 0.8,
+  "raw/count_difference": 1,
+  "raw/rate_ratio": 0.75,
+  "raw/zeros": 1
+}
